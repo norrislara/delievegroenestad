@@ -1,32 +1,85 @@
-/*----------------algemeen------------------*/
+/* Algemeen*/
 body {
   background-color: #F3F2F0;
 }
 
 h1 {
+  font-family: "essonnes-display", serif;
   font-size: 3em;
-  color: #7D9875;
-  font-family: "jubilat", serif;
+  margin-top: 30%;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 h2 {
-  font-family: "essonnes-display", serif;
-}
-
-h3 {
-  font-size: 2em;
   font-family: "jubilat", serif;
   font-weight: 200;
   font-style: italic;
+  font-size: 2.5em;
+  margin: 0;
+  text-align: center;
 }
 
-p {
+
+p, a {
   font-family: "bilo", serif;
+  text-align: justify;
 }
 
-/*----------------navigatie------------------*/
+header {
+  margin: 5%;
+  border-bottom: 0.5em dashed #E1D3B8;
+  padding-bottom: 2%;
+}
 
-header nav {
+footer {
+  margin: 20% 0%;
+}
+
+footer div:nth-child(2) {
+  margin: 5%;
+  padding-top: 5%;
+  border-top: 0.5em dashed #E1D3B8;
+}
+
+footer div p {
+  margin: 0;
+  font-size: 2em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15%;
+}
+
+/*vorige-volgende pagina*/
+
+footer div:first-child{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+  color: #F6B063;
+}
+
+footer div:first-child a{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+  color: #F6B063;
+  font-size: 2em;
+}
+
+.home footer div:first-child{
+  margin: 0 10%;
+  color: #F6B063;
+  display: flex;
+  justify-content: flex-end
+}
+
+/* Navigatie*/
+footer nav {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -34,67 +87,155 @@ header nav {
   text-align: center;
 }
 
-header nav ul {
+footer nav ul {
   display: flex;
   background-color: #E1D3B8;
   padding: 0;
   margin: 0;
 }
 
-header nav ul li {
+footer nav ul li {
   list-style: none;
   margin: 2% 2%;
 }
 
-header nav ul li img {
+footer nav ul li img {
   width: 50%;
 }
 
-/*----------------homepagina------------------*/
-
-.home main section:first-of-type {
-  display: flex;
-  align-items: center;
+/*Home Page*/
+.home main img {
+  margin: 30%;
 }
 
-.home main section:first-of-type img {
-  margin: 3%;
+.home main h2 {
+  padding: 1.5%;
+  border-radius: 2%;
+  background-color: #ADC4BD;
 }
 
-.home main section:not(section:first-of-type) {
+.home main div:last-of-type img {
+  margin: 0;
+  margin-top: 20%;
+  width: 40%;
+  margin-bottom: 5%;
+  padding: 5%;
+  border-radius: 50%;
+  background-color: #ADC4BD;
+}
+
+.home main div:first-of-type p{
   text-align: center;
-  margin: 0 10%;
 }
 
-.home main section:nth-of-type(1) {
-  margin-bottom: 40%;
+.home main {
+  text-align: justify;
 }
 
-/*----------------zerowaste------------------*/
+.home main div {
+  margin-top: 20%;
+  text-align: center;
+}
+
+.home main div p {
+  text-align: justify;
+}
+
+.home main div img {
+  margin: 1%;
+  width: 80%;
+}
+
+/*Zero Waste*/
 
 .zerowaste main div {
   display: flex;
   align-items: center;
 }
 
-.zerowaste main article h3,
-.zerowaste main article p {
-  display: flex;
+.zerowaste main div:first-child img {
+  margin: 0;
+  margin-top: 60%;
 }
 
-.zerowaste img{
-  margin: 0 5%;
-}
-
-.zerowaste p{
+.zerowaste main div:not(:first-child) img {
   margin-right: 10%;
-  font-size: 2em;
 }
 
-.zerowaste h3{
-  font-size: 2.5em;
+.zerowaste main div article p {
+  font-size: 1.7em;
+  margin-top: 0;
+  margin-bottom: 15%;
 }
 
-.zerowaste section{
-  margin: 0 5%;
+.zerowaste main div article h2 {
+  text-align: left;
+  margin-top: 15%;
 }
+
+.zerowaste main section img {
+  margin-top: 5%;
+}
+
+/*Little Plant Pantry*/
+
+.littleplantpantry main img {
+  margin: 20%;
+}
+
+.littleplantpantry main div img {
+  margin: 0;
+  margin-top: 60%;
+}
+
+.littleplantpantry main div:last-of-type img{
+  margin: 0;
+}
+
+.littleplantpantry main div:last-of-type img{
+  margin: 1%;
+}
+
+.littleplantpantry main section:last-of-type{
+  margin-bottom: 20%;
+}
+
+.littleplantpantry p a{
+  text-decoration: none;
+  color: #F6B063;
+}
+
+/*veganproducten*/
+
+.veganproducten main div img {
+  margin-top: 60%;
+  margin-bottom: 20%;
+}
+
+.veganproducten main div:not(:first-of-type) {
+  display: flex;
+  margin-top: 20%;
+}
+
+
+.veganproducten main div:not(:first-of-type) img{
+  margin: 0;
+  border-radius: 3em;
+}
+
+.veganproducten main div section {
+  flex-direction: column;
+}
+
+.veganproducten main div section h2{
+  text-align: left;
+  margin-left: 10%;
+}
+
+.veganproducten main div section p {
+  margin-left: 10%;
+  font-size: 0.8em;
+  margin-top: 0;
+  text-align: left;
+}
+
