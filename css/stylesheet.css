@@ -1,6 +1,10 @@
-/* Algemeen*/
+/* Algemeen */
 body {
   background-color: #F3F2F0;
+}
+
+h1, h2 {
+  text-align: center;
 }
 
 h1 {
@@ -8,7 +12,6 @@ h1 {
   font-size: 3em;
   margin-top: 30%;
   margin-bottom: 0;
-  text-align: center;
 }
 
 h2 {
@@ -16,10 +19,7 @@ h2 {
   font-weight: 200;
   font-style: italic;
   font-size: 2.5em;
-  margin: 0;
-  text-align: center;
 }
-
 
 p, a {
   font-family: "bilo", serif;
@@ -54,16 +54,17 @@ main {
   margin: 0 15%;
 }
 
-/*vorige-volgende pagina*/
-
-footer div:first-child{
+/* Vorige-Volgende pagina */
+footer div:first-child,
+.home footer div:first-child {
   display: flex;
   justify-content: space-between;
   margin: 0 10%;
   color: #F6B063;
 }
 
-footer div:first-child a{
+footer div:first-child a,
+.home footer div:first-child a {
   display: flex;
   justify-content: space-between;
   margin: 0 10%;
@@ -71,14 +72,11 @@ footer div:first-child a{
   font-size: 2em;
 }
 
-.home footer div:first-child{
-  margin: 0 10%;
-  color: #F6B063;
-  display: flex;
-  justify-content: flex-end
+.home footer div:first-child {
+  justify-content: flex-end;
 }
 
-/* Navigatie*/
+/* Navigatie */
 footer nav {
   position: fixed;
   left: 0;
@@ -103,7 +101,7 @@ footer nav ul li img {
   width: 50%;
 }
 
-/*Home Page*/
+/* Home Page */
 .home main img {
   margin: 30%;
 }
@@ -124,30 +122,25 @@ footer nav ul li img {
   background-color: #ADC4BD;
 }
 
-.home main div:first-of-type p{
+.home main div:first-of-type p {
   text-align: center;
 }
 
-.home main {
-  text-align: justify;
-}
-
+.home main,
 .home main div {
-  margin-top: 20%;
-  text-align: center;
-}
-
-.home main div p {
   text-align: justify;
 }
 
-.home main div img {
-  margin: 1%;
-  width: 80%;
+.home main div, .home main div p, .home main div img {
+  margin: 0;
+  margin-top: 5%;
 }
 
-/*Zero Waste*/
+.home main div{
+  text-align: center;
+}
 
+/* Zero Waste */
 .zerowaste main div {
   display: flex;
   align-items: center;
@@ -177,36 +170,32 @@ footer nav ul li img {
   margin-top: 5%;
 }
 
-/*Little Plant Pantry*/
-
+/* Little Plant Pantry */
 .littleplantpantry main img {
   margin: 20%;
 }
 
-.littleplantpantry main div img {
+.littleplantpantry main div img,
+.littleplantpantry main div:last-of-type img {
   margin: 0;
   margin-top: 60%;
 }
 
-.littleplantpantry main div:last-of-type img{
-  margin: 0;
-}
-
-.littleplantpantry main div:last-of-type img{
+.littleplantpantry main div:last-of-type img,
+.littleplantpantry main div:last-of-type img {
   margin: 1%;
 }
 
-.littleplantpantry main section:last-of-type{
+.littleplantpantry main section:last-of-type {
   margin-bottom: 20%;
 }
 
-.littleplantpantry p a{
+.littleplantpantry p a {
   text-decoration: none;
   color: #F6B063;
 }
 
-/*veganproducten*/
-
+/* Veganproducten */
 .veganproducten main div img {
   margin-top: 60%;
   margin-bottom: 20%;
@@ -217,8 +206,7 @@ footer nav ul li img {
   margin-top: 20%;
 }
 
-
-.veganproducten main div:not(:first-of-type) img{
+.veganproducten main div:not(:first-of-type) img {
   margin: 0;
   border-radius: 3em;
 }
@@ -227,7 +215,7 @@ footer nav ul li img {
   flex-direction: column;
 }
 
-.veganproducten main div section h2{
+.veganproducten main div section h2 {
   text-align: left;
   margin-left: 10%;
 }
@@ -238,4 +226,3 @@ footer nav ul li img {
   margin-top: 0;
   text-align: left;
 }
-
